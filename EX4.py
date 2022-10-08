@@ -5,9 +5,9 @@ size = int(input ("Введите число N: "))
 numbers_list = list(range(-size, size+1))
 path = 'file.txt'
 data = open(path, 'r')
-sum = 1
+mult = 1
 for position in data:
-    sum = numbers_list[int(position)] * sum
+    mult = numbers_list[int(position)] * mult
 data.close()
 
-print (f"Для N = {size}: {numbers_list}. Сумма = {sum}")
+print (f"Для N = {size}: {numbers_list}. Сумма = {mult}")
